@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de Uso — Matchez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green: #00E676;
+    --black: #080808;
+    --surface: #111111;
+    --border: #222222;
+    --text: #F0F0F0;
+    --muted: #888888;
+  }
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(8,8,8,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-logo svg { width: 32px; height: 32px; }
+  .nav-logo span { color: var(--green); }
+  .back-link {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+  }
+  .page-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+  .last-updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 40px 0 16px;
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: var(--green);
+    margin-right: 12px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+  p { margin-bottom: 16px; color: var(--text); }
+  ul { margin: 0 0 16px 24px; }
+  ul li { margin-bottom: 8px; color: var(--text); }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .highlight-box {
+    background: rgba(0,230,118,0.06);
+    border: 1px solid rgba(0,230,118,0.2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box p { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--green); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="48" fill="#00E676"/>
+      <circle cx="50" cy="50" r="30" fill="#080808"/>
+      <path d="M32 28 Q50 50 32 72" stroke="#00E676" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M68 28 Q50 50 68 72" stroke="#00E676" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </svg>
+    Match<span>ez</span>
+  </a>
+  <a href="/" class="back-link">← Volver al inicio</a>
+</nav>
+
+<div class="container">
+  <div class="page-label">Legal</div>
+  <h1>Términos de Uso</h1>
+  <p class="last-updated">Última actualización: junio de 2026</p>
+
+  <div class="highlight-box">
+    <p>Al usar Matchez, aceptas estos términos. Si no estás de acuerdo con alguno de ellos, por favor no uses la plataforma. Para cualquier duda, contáctanos en <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a>.</p>
+  </div>
+
+  <h2>1. Descripción del servicio</h2>
+  <p>Matchez es una plataforma digital que conecta jugadores de pádel, tenis y frontón para organizar partidas, encontrar compañeros de juego, reservar pistas en clubes y participar en la comunidad deportiva.</p>
+
+  <h2>2. Edad mínima y verificación</h2>
+  <p>Matchez está destinado exclusivamente a personas mayores de 18 años. Al registrarte, debes confirmar que eres mayor de edad.</p>
+  <p><strong>Responsabilidad por declaración falsa:</strong> los usuarios que declaren falsamente ser mayores de edad asumen plena responsabilidad legal por cualquier consecuencia derivada de dicha declaración. Matchez no puede ser considerada responsable en ningún caso si un menor de edad proporciona información falsa sobre su edad para acceder a la plataforma. La verificación de edad queda registrada con fecha y hora en nuestros sistemas.</p>
+
+  <h2>3. Registro y cuenta de usuario</h2>
+  <p>Para usar Matchez debes crear una cuenta con un nombre de usuario único, dirección de correo electrónico verificada y contraseña, o autenticarte mediante Google.</p>
+  <ul>
+    <li>Eres responsable de mantener la confidencialidad de tu cuenta.</li>
+    <li>Debes proporcionar información veraz y actualizada.</li>
+    <li>No puedes crear cuentas en nombre de terceros sin su consentimiento.</li>
+    <li>Una misma persona no puede tener múltiples cuentas activas.</li>
+  </ul>
+
+  <h2>4. Uso aceptable</h2>
+  <p>Te comprometes a usar Matchez de forma responsable y respetuosa. Queda prohibido:</p>
+  <ul>
+    <li>Publicar contenido ofensivo, discriminatorio, violento o ilegal.</li>
+    <li>Acosar, amenazar o intimidar a otros usuarios.</li>
+    <li>Usar la plataforma con fines comerciales no autorizados.</li>
+    <li>Intentar acceder sin autorización a sistemas o cuentas ajenas.</li>
+    <li>Crear partidas o eventos falsos con intención de engañar.</li>
+    <li>No aparecer a un partido sin avisar con suficiente antelación.</li>
+  </ul>
+
+  <h2>5. Partidas y reservas</h2>
+  <p>Matchez facilita la organización de partidas entre usuarios pero no es responsable de:</p>
+  <ul>
+    <li>El comportamiento de los jugadores durante las partidas.</li>
+    <li>Lesiones o daños que puedan ocurrir durante el juego.</li>
+    <li>La disponibilidad real de las pistas reservadas a través de la plataforma.</li>
+    <li>Conflictos entre usuarios derivados de la organización de partidas.</li>
+  </ul>
+
+  <h2>6. Pagos y comisiones</h2>
+  <p>Los pagos en Matchez se procesan de forma segura a través de Stripe. Al realizar una reserva o pago:</p>
+  <ul>
+    <li>Matchez aplica una comisión del 10% sobre el precio de la reserva (excepto para usuarios Premium).</li>
+    <li>El 90% restante se transfiere directamente al club o propietario de la pista.</li>
+    <li>Los usuarios Premium abonan únicamente el precio establecido por el club sin comisión adicional.</li>
+    <li>Las suscripciones Premium se renuevan automáticamente hasta que el usuario las cancele.</li>
+  </ul>
+  <p>Matchez no almacena datos de tarjetas bancarias. Toda la información de pago es gestionada por Stripe de acuerdo con sus propios términos y políticas de seguridad.</p>
+
+  <h2>7. Membresías de clubes</h2>
+  <p>Los clubes pueden ofrecer membresías (cuotas de socio) a través de la plataforma. El pago de estas membresías sigue el mismo esquema de comisiones: 90% para el club y 10% para Matchez. Las condiciones específicas de cada membresía son establecidas por cada club y son responsabilidad del mismo.</p>
+
+  <h2>8. Suscripción Premium</h2>
+  <p>Matchez ofrece una suscripción Premium con beneficios adicionales:</p>
+  <ul>
+    <li>Sin comisión del 10% en reservas de pistas.</li>
+    <li>Mayor visibilidad de tus partidas en Descubrir.</li>
+    <li>Badge verificado en tu perfil.</li>
+    <li>Estadísticas avanzadas post-partido.</li>
+    <li>Notificaciones personalizadas de plazas libres en partidas cercanas.</li>
+  </ul>
+  <p>La suscripción Premium incluye 14 días de prueba gratuita. Tras el período de prueba, se factura mensualmente (6,99€/mes) o anualmente (49,99€/año). Puedes cancelar en cualquier momento desde tu perfil.</p>
+
+  <h2>9. Contenido generado por usuarios</h2>
+  <p>Eres responsable del contenido que publicas en Matchez (reseñas, mensajes, publicaciones en Comunidad, etc.). Al publicar contenido, otorgas a Matchez una licencia no exclusiva para mostrarlo en la plataforma.</p>
+  <p>Matchez se reserva el derecho de eliminar cualquier contenido que infrinja estos términos o que consideremos inapropiado.</p>
+
+  <h2>10. Suspensión y eliminación de cuentas</h2>
+  <p>Matchez puede suspender o eliminar tu cuenta si:</p>
+  <ul>
+    <li>Incumples estos términos de uso.</li>
+    <li>Usas la plataforma de forma fraudulenta o ilegal.</li>
+    <li>Recibes múltiples reportes de otros usuarios por mal comportamiento.</li>
+  </ul>
+  <p>Puedes eliminar tu cuenta en cualquier momento desde el menú de ajustes de la app.</p>
+
+  <h2>11. Propiedad intelectual</h2>
+  <p>Matchez y todos sus elementos (logo, diseño, código, textos) son propiedad de Matchez. No está permitida su reproducción, distribución o uso sin autorización expresa.</p>
+
+  <h2>12. Limitación de responsabilidad</h2>
+  <p>Matchez no se hace responsable de daños indirectos, incidentales o consecuentes derivados del uso de la plataforma. El servicio se ofrece "tal cual" sin garantías de disponibilidad continua.</p>
+
+  <h2>13. Modificaciones</h2>
+  <p>Matchez puede modificar estos términos en cualquier momento. Los cambios significativos serán notificados a los usuarios con antelación razonable. El uso continuado de la plataforma tras los cambios implica la aceptación de los nuevos términos.</p>
+
+  <h2>14. Legislación aplicable</h2>
+  <p>Estos términos se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales competentes según la normativa vigente.</p>
+
+  <h2>15. Contacto</h2>
+  <p>Para cualquier consulta sobre estos términos, contáctanos en: <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a></p>
+</div>
+
+<footer>
+  <p>© 2026 Matchez. Todos los derechos reservados. · <a href="/">Inicio</a> · <a href="/privacidad">Política de privacidad</a> · <a href="mailto:matchez.es@gmail.com">Contacto</a></p>
+</footer>
+
+</body>
+</html>

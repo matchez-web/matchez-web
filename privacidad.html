@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Matchez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green: #00E676;
+    --black: #080808;
+    --surface: #111111;
+    --border: #222222;
+    --text: #F0F0F0;
+    --muted: #888888;
+  }
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(8,8,8,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-logo svg { width: 32px; height: 32px; }
+  .nav-logo span { color: var(--green); }
+  .back-link {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+  }
+  .page-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+  .last-updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 40px 0 16px;
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: var(--green);
+    margin-right: 12px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+  p { margin-bottom: 16px; color: var(--text); }
+  ul { margin: 0 0 16px 24px; }
+  ul li { margin-bottom: 8px; color: var(--text); }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .highlight-box {
+    background: rgba(0,230,118,0.06);
+    border: 1px solid rgba(0,230,118,0.2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box p { margin-bottom: 0; color: var(--text); }
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--green); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="48" fill="#00E676"/>
+      <circle cx="50" cy="50" r="30" fill="#080808"/>
+      <path d="M32 28 Q50 50 32 72" stroke="#00E676" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M68 28 Q50 50 68 72" stroke="#00E676" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </svg>
+    Match<span>ez</span>
+  </a>
+  <a href="/" class="back-link">← Volver al inicio</a>
+</nav>
+
+<div class="container">
+  <div class="page-label">Legal</div>
+  <h1>Política de Privacidad</h1>
+  <p class="last-updated">Última actualización: junio de 2026</p>
+
+  <div class="highlight-box">
+    <p>En Matchez nos tomamos muy en serio tu privacidad. Esta política explica qué datos recopilamos, cómo los usamos y cuáles son tus derechos. Si tienes alguna duda, escríbenos a <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a>.</p>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>El responsable del tratamiento de tus datos personales es <strong>Matchez</strong>, con correo electrónico de contacto: <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a>.</p>
+
+  <h2>2. Datos que recopilamos</h2>
+  <p>Recopilamos los siguientes datos cuando usas Matchez:</p>
+  <ul>
+    <li><strong>Datos de registro:</strong> nombre, dirección de correo electrónico, contraseña (cifrada) o datos de autenticación de Google.</li>
+    <li><strong>Datos de perfil:</strong> nombre de usuario, foto, categoría deportiva, ciudad, edad, posición en pista, mano dominante y disponibilidad horaria.</li>
+    <li><strong>Datos de actividad:</strong> partidas creadas y jugadas, clubes seguidos, amigos, reseñas, estadísticas post-partido.</li>
+    <li><strong>Datos de ubicación:</strong> ubicación aproximada para mostrar partidas y clubes cercanos. Solo se utiliza cuando la app está en uso.</li>
+    <li><strong>Datos de pago:</strong> gestionados por Stripe. Matchez no almacena datos de tarjetas bancarias.</li>
+    <li><strong>Datos de comunicación:</strong> mensajes en chats de partidas, mensajes directos entre amigos y chats de grupo.</li>
+    <li><strong>Verificación de edad:</strong> registro de si el usuario ha declarado ser mayor de edad y la fecha de dicha declaración.</li>
+  </ul>
+
+  <h2>3. Finalidad del tratamiento</h2>
+  <p>Usamos tus datos para:</p>
+  <ul>
+    <li>Permitirte crear una cuenta y acceder a la plataforma.</li>
+    <li>Mostrar partidas, clubes y jugadores cercanos a tu ubicación.</li>
+    <li>Facilitar la comunicación entre jugadores y la organización de partidas.</li>
+    <li>Procesar pagos de reservas de pistas y suscripciones premium a través de Stripe.</li>
+    <li>Enviarte notificaciones push relacionadas con tu actividad en la app.</li>
+    <li>Mejorar la experiencia de usuario y el funcionamiento de la plataforma.</li>
+    <li>Cumplir con obligaciones legales.</li>
+  </ul>
+
+  <h2>4. Base legal del tratamiento</h2>
+  <p>El tratamiento de tus datos se basa en:</p>
+  <ul>
+    <li><strong>Ejecución del contrato:</strong> para prestarte los servicios de Matchez.</li>
+    <li><strong>Consentimiento:</strong> para el envío de notificaciones y el uso de la ubicación.</li>
+    <li><strong>Interés legítimo:</strong> para mejorar la seguridad y el funcionamiento de la plataforma.</li>
+    <li><strong>Obligación legal:</strong> para cumplir con normativas aplicables.</li>
+  </ul>
+
+  <h2>5. Compartición de datos</h2>
+  <p>Matchez no vende tus datos personales. Podemos compartirlos con:</p>
+  <ul>
+    <li><strong>Stripe:</strong> para el procesamiento seguro de pagos.</li>
+    <li><strong>SendGrid:</strong> para el envío de correos electrónicos de verificación y notificaciones.</li>
+    <li><strong>Firebase (Google):</strong> para el sistema de notificaciones push.</li>
+    <li><strong>Otros usuarios:</strong> tu perfil público (nombre, foto, categoría, ciudad) es visible para otros usuarios de la plataforma.</li>
+  </ul>
+
+  <h2>6. Conservación de datos</h2>
+  <p>Conservamos tus datos mientras tu cuenta esté activa. Si eliminas tu cuenta, tus datos personales serán anonimizados en un plazo máximo de 30 días, conservando únicamente los datos necesarios para cumplir con obligaciones legales.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>De acuerdo con el RGPD, tienes derecho a:</p>
+  <ul>
+    <li><strong>Acceso:</strong> solicitar una copia de tus datos personales.</li>
+    <li><strong>Rectificación:</strong> corregir datos inexactos.</li>
+    <li><strong>Supresión:</strong> solicitar la eliminación de tus datos.</li>
+    <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado.</li>
+    <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos.</li>
+    <li><strong>Limitación:</strong> solicitar la limitación del tratamiento.</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a>.</p>
+
+  <h2>8. Seguridad</h2>
+  <p>Implementamos medidas técnicas y organizativas para proteger tus datos, incluyendo cifrado de contraseñas, conexiones HTTPS y acceso restringido a los datos.</p>
+
+  <h2>9. Menores y verificación de edad</h2>
+  <p>Matchez está destinado exclusivamente a personas mayores de 18 años. Al registrarte, debes declarar que eres mayor de edad. Esta declaración y su fecha quedan registradas en nuestros sistemas.</p>
+  <p>Los usuarios que declaren falsamente ser mayores de edad asumen plena responsabilidad legal por las consecuencias derivadas de dicha declaración falsa. Matchez no puede ser considerada responsable si un menor de edad proporciona información falsa sobre su edad para acceder a la plataforma.</p>
+
+  <h2>10. Cookies</h2>
+  <p>La app móvil de Matchez no utiliza cookies. El sitio web matchez.es puede utilizar cookies técnicas estrictamente necesarias para su funcionamiento.</p>
+
+  <h2>11. Cambios en esta política</h2>
+  <p>Podemos actualizar esta política de privacidad ocasionalmente. Te notificaremos de cambios significativos a través de la app o por correo electrónico.</p>
+
+  <h2>12. Contacto</h2>
+  <p>Para cualquier consulta relacionada con tu privacidad, contáctanos en: <a href="mailto:matchez.es@gmail.com">matchez.es@gmail.com</a></p>
+</div>
+
+<footer>
+  <p>© 2026 Matchez. Todos los derechos reservados. · <a href="/">Inicio</a> · <a href="/terminos">Términos de uso</a> · <a href="mailto:matchez.es@gmail.com">Contacto</a></p>
+</footer>
+
+</body>
+</html>
