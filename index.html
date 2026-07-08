@@ -933,83 +933,29 @@
 <footer>
   <div class="footer-logo">Match<span>ez</span></div>
   <ul class="footer-links">
-    <li><a href="#">Política de privacidad</a></li>
-    <li><a href="#">Términos de uso</a></li>
+    <li><a href="privacidad.html" target="_blank">Política de privacidad</a></li>
+    <li><a href="terminos.html" target="_blank">Términos de uso</a></li>
     <li><a href="mailto:matchez.es@gmail.com">Contacto</a></li>
-    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-    <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+    <li><a href="https://www.instagram.com/matchezofficial" target="_blank">Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@matchezofficial" target="_blank">TikTok</a></li>
   </ul>
-  <p class="footer-copy">© 2026 Matchez · matchez.es · Todos los derechos reservados.</p>
+  <p class="footer-copy">© 2026 Matchez. Todos los derechos reservados.</p>
 </footer>
 
 <script>
-const BREVO_API_KEY = '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';
-const BREVO_LIST_ID = 3;
-
-async function handleSubmit(e) {
+function handleSubmit(e) {
   e.preventDefault();
   const name = document.getElementById('nameInput').value;
   const email = document.getElementById('emailInput').value;
-  const sport = document.getElementById('sportSelect').value;
-  const level = document.getElementById('levelSelect').value;
-
+  
   if (!name || !email) return;
-
-  const submitBtn = document.querySelector('.form-submit');
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Apuntando...';
-
-  try {
-    // 1. Guardar el contacto en Brevo (y dispara el email de confirmación si tienes
-    //    configurado un workflow de automatización en Brevo para esta lista)
-    await fetch('https://api.brevo.com/v3/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key': BREVO_API_KEY
-      },
-      body: JSON.stringify({
-        email: email,
-        attributes: {
-          NOMBRE: name,
-          DEPORTE: sport,
-          CATEGORIA: level
-        },
-        listIds: [BREVO_LIST_ID],
-        updateEnabled: true
-      })
-    });
-
-    // 2. Enviarte una notificación a ti por email cada vez que alguien se apunta
-    await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key': BREVO_API_KEY
-      },
-      body: JSON.stringify({
-        sender: { name: 'Matchez Waitlist', email: 'matchez.es@gmail.com' },
-        to: [{ email: 'matchez.es@gmail.com' }],
-        subject: `Nuevo apuntado: ${name}`,
-        htmlContent: `<p>Nuevo registro en la waitlist:</p>
-          <ul>
-            <li><b>Nombre:</b> ${name}</li>
-            <li><b>Email:</b> ${email}</li>
-            <li><b>Deporte:</b> ${sport || '-'}</li>
-            <li><b>Categoría:</b> ${level || '-'}</li>
-          </ul>`
-      })
-    });
-
-    // Hide form, show success
-    document.getElementById('waitlistForm').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
-  } catch (err) {
-    console.error('Error al apuntarse:', err);
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Apuntarme a la lista de espera →';
-    alert('Hubo un problema al apuntarte. Por favor, inténtalo de nuevo.');
-  }
+  
+  // Hide form, show success
+  document.getElementById('waitlistForm').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+  
+  // Here you would normally send to a backend
+  console.log('Waitlist signup:', { name, email });
 }
 
 // Smooth scroll for nav links
